@@ -95,13 +95,11 @@ static void Train_Task(void *pvParameters)
 
 		if (Train_Direction == EAST)
 		{
-			while ((GPIO_PORTF_DATA_R & 0x01) != 0)
-				; // waiting for train sensor 2
+			while ((GPIO_PORTF_DATA_R & 0x01) != 0); // waiting for train sensor 2
 		}
 		else if (Train_Direction == WEST)
 		{
-			while ((GPIO_PORTF_DATA_R & 0x10) != 0)
-				; // waiting for train sensor 1
+			while ((GPIO_PORTF_DATA_R & 0x10) != 0); // waiting for train sensor 1
 		}
 
 		vTaskSuspend(NULL); // suspend this task
