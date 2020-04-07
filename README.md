@@ -1,4 +1,4 @@
-### Traffic control system with pedestrian and train mode
+## Traffic control system with pedestrian and train mode
 #### There are three operation modes
 **normal mode** where traffic switches direction from north/south to east/west every tgn, tgw defined at the top main
 
